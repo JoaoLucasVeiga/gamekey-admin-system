@@ -3,6 +3,8 @@
 > Administrative panel built with PHP, MySQL and MVC architecture with secure authentication.
 > 
 > *Sistema administrativo para gerenciamento de produtos digitais (keys de jogos), desenvolvido em PHP com MySQL utilizando padrão MVC e autenticação segura.*
+>
+> **🔗 **Acesse o projeto online:** [Clique aqui para ver funcionando](http://gamekeys-admin.great-site.net)**
 
 <img width="1438" height="750" alt="image" src="https://github.com/user-attachments/assets/456c2e40-0a54-483f-ad07-3c957c8fad5d" />
 <img width="1434" height="753" alt="image" src="https://github.com/user-attachments/assets/bd8e81d1-bc9e-4386-b760-3ba3a198996f" />
@@ -28,7 +30,7 @@
 
 ## 📁 Estrutura do Projeto
 
-Abaixo está a organização real de diretórios baseada no padrão MVC adotado no projeto:
+Abaixo está a organização de diretórios baseada no padrão MVC adotado no projeto:
 
 ```text
 gamekey-admin-system/
@@ -63,27 +65,25 @@ gamekey-admin-system/
 ├── database.sql                   # Script de criação das tabelas do banco
 ├── index.php                      # Ponto de entrada e gerenciador de rotas
 └── README.md                      # Documentação do projeto
-⚙️ Como Executar o Projeto
-Siga os passos abaixo para rodar o projeto localmente na sua máquina:
+⚙️ Como Executar o Projeto (Localmente)
+Siga os passos abaixo para rodar o projeto na sua máquina:
 1. Clonar o repositório
-Abra o terminal, navegue até a pasta htdocs do seu XAMPP (ex: C:\xampp\htdocs\) e execute:
+Abra o terminal na pasta htdocs do seu XAMPP e execute:
 code
 Bash
 git clone https://github.com/JoaoLucasVeiga/gamekey-admin-system.git
-(Se preferir, renomeie a pasta clonada para trabalho_crud_jogos).
 2. Configurar o Banco de Dados
-Inicie o Apache e o MySQL no painel do XAMPP.
+Inicie o Apache e o MySQL no XAMPP.
 Acesse o phpMyAdmin: http://localhost/phpmyadmin
-Crie um banco de dados com o nome exato: db_steamkeys_globais
-Importe o arquivo database.sql que está na raiz do projeto.
+Vá na aba Importar e selecione o arquivo database.sql que está na raiz do projeto.
+O script criará automaticamente o banco db_steamkeys_globais e as tabelas necessárias.
 3. Acessar o Sistema
-Abra o seu navegador e acesse a URL correspondente à pasta do projeto:
+Abra o navegador e acesse:
 code
 Text
 http://localhost/gamekey-admin-system
-(Ou http://localhost/trabalho_crud_jogos caso tenha renomeado a pasta).
 👤 Usuário de Teste
-Para acessar o painel administrativo, utilize as credenciais padrão já cadastradas no banco:
+Para acessar o painel administrativo, utilize as credenciais padrão:
 Email: admin@email.com
 Senha: 123456
-Desenvolvido por(https://github.com/JoaoLucasVeiga).
+Desenvolvido por João Lucas Veiga.
