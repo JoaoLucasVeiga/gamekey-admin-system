@@ -1,13 +1,5 @@
 <?php
-/*******************************************************************************
- * Curso: Engenharia de Software
- * Disciplina: Linguagem e Técnicas de Programação
- * Professor: Flores
- * Turma: ESOFT-2B
- * Componentes: (Seus nomes e RAs)
- ******************************************************************************/
 
-// AS DUAS LINHAS ABAIXO ESTAVAM FALTANDO
 require_once __DIR__ . '/../models/Produto.php';
 require_once __DIR__ . '/../models/Plataforma.php';
 
