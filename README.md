@@ -37,10 +37,16 @@ Visando as melhores práticas de mercado e meu interesse no ecossistema de ciber
 - **Gestão de Produtos (Keys):** CRUD completo (Create, Read, Update, Delete) com upload de imagens/capas.
 - **Gestão de Plataformas:** Mapeamento e cadastro de plataformas (Steam, Epic Games, Xbox, etc).
 - **Relacionamento de Dados:** Vínculo estruturado entre os jogos e as plataformas no banco de dados.
+- **Conexão Híbrida:** O sistema detecta automaticamente se está rodando em **Localhost (XAMPP)** ou **Produção (InfinityFree)**
+- ## Dashboard Estatístico
+Recentemente implementei um painel de controle inicial que oferece uma visão rápida do inventário:
+- **Contagem em Tempo Real:** Total de jogos cadastrados.
+- **Gestão de Plataformas:** Visualização da quantidade de plataformas ativas.
+- **Navegação Inteligente:** Acesso rápido às listas de gerenciamento.
+
 
 ## 🗺️ Roadmap (Próximos Passos)
 A evolução da aplicação é constante. As próximas features mapeadas são:
-- [ ] **Dashboard Estatístico:** Tela inicial com métricas (Total de keys, plataformas ativas, etc).
 - [ ] **Sistema de Logs:** Registro de auditoria no banco de dados (Quem deletou/editou qual key e quando).
 - [ ] **Filtros e Paginação:** Melhoria na listagem de produtos para lidar com grandes volumes de dados.
 
