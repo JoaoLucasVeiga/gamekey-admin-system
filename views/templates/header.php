@@ -15,14 +15,19 @@
     </div>
 
     <header class="main-header">
-        <h1><a href="index.php">GameKey Admin</a></h1>
+        <h1><a href="index.php?action=dashboard">GameKey Admin</a></h1>
         <nav>
+            <!-- Novo botão de Dashboard -->
+            <a href="index.php?action=dashboard">Dashboard</a>
+            
             <a href="index.php?action=listar_produtos">Gerenciar Produtos</a>
             <a href="index.php?action=listar_plataformas">Gerenciar Plataformas</a>
 
             <?php if (isset($_SESSION['usuario'])): ?>
-                <span style="margin-left:15px;">👤 <?= $_SESSION['usuario']; ?></span>
-                <a href="index.php?action=logout" style="margin-left:10px;">Sair</a>
+                <span style="margin-left:15px; color: #fff; font-size: 0.9rem; opacity: 0.8;">
+                    👤 <?= htmlspecialchars($_SESSION['usuario']); ?>
+                </span>
+                <a href="index.php?action=logout" style="margin-left:10px; color: #ff4d4d;">Sair</a>
             <?php endif; ?>
         </nav>
     </header>

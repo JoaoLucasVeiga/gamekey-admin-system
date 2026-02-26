@@ -1,18 +1,5 @@
 <?php
-/*******************************************************************************
- * Curso: Engenharia de Software
- * Disciplina: Linguagem e Técnicas de Programação
- * Professor: Flores
- * Turma: ESOFT-2B
- * Componentes:
- *     25291090-2 - João Lucas Veiga de Carvalho
- *     25164719-2 - Rafael Maia
- *     25033056-2 - Gabriel Michels Cubas
- *     25001118-2 - Emanuel Gomes de Almeida
- *     25361613-2 - Arthur Marinho Figueira
- *     25362639-2 - Roberti Mendes de moura
- * Descritivo: Model para a entidade Plataforma, responsável pelas operações CRUD.
- ******************************************************************************/
+
 
 class Plataforma {
     private $pdo;
@@ -45,6 +32,18 @@ class Plataforma {
     public function excluir($id) {
         $stmt = $this->pdo->prepare("DELETE FROM plataformas WHERE id = ?");
         return $stmt->execute([$id]);
+    }
+    public function contarTodos() {
+        try {
+            $query = "SELECT COUNT(*) as total FROM plataformas";
+            // AQUI ESTÁ A CORREÇÃO: usando pdo em vez de conn
+            $stmt = $this->pdo->prepare($query);
+            $stmt->execute();
+            $resultado = $stmt->fetch(PDO::FETCH_ASSOC);
+            return $resultado['total'];
+        } catch (PDOException $e) {
+            return 0;
+        }
     }
 }
 ?>

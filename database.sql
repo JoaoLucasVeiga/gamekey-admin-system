@@ -1,11 +1,4 @@
-/*******************************************************************************
- * Curso: Engenharia de Software
- * Disciplina: Linguagem e Técnicas de Programação
- * Professor: Flores
- * Turma: ESOFT-2B
- * Componentes: (Seus nomes e RAs)
- * Descritivo: Script ATUALIZADO com imagens locais.
- ******************************************************************************/
+
 CREATE DATABASE IF NOT EXISTS db_steamkeys_globais;
 USE db_steamkeys_globais;
 

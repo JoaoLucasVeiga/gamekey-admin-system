@@ -71,5 +71,17 @@ class Produto {
         $stmt = $this->pdo->prepare("DELETE FROM produtos WHERE id = ?");
         return $stmt->execute([$id]);
     }
+    public function contarTodos() {
+        try {
+            $query = "SELECT COUNT(*) as total FROM produtos";
+           
+            $stmt = $this->pdo->prepare($query); 
+            $stmt->execute();
+            $resultado = $stmt->fetch(PDO::FETCH_ASSOC);
+            return $resultado['total'];
+        } catch (PDOException $e) {
+            return 0;
+        }
+    }
 }
 ?>
